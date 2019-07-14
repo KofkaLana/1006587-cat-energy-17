@@ -32,6 +32,68 @@
   </header>
 
   <main class="page-main">
+    <section class="choice">
+      <h1 class="choice__title">Подбор программы</h1>
+      <p class="choice__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <form class="choice__form" action="https://echo.htmlacademy.ru" method="POST">
+        <label for="name">Имя:<sup>*</sup></label>
+        <input type="text" name="name" id="name" placeholder="Барсик">
+        <label for="weight">Вес (кг):<sup>*</sup></label>
+        <input type="number" name="weight" id="weight" placeholder="7">
+        <label for="age">Возраст (лет):</label>
+        <input type="number" name="age" id="age" placeholder="7">
+        <ul class="choice-list radio-list">
+          <li class="radio-list__option">
+            <input type="radio" name="reducing" id="reducing" value="Похудение" checked>
+            <label for="reducing">Похудение</label>
+          </li>
+          <li class="radio-list__option">
+            <input type="radio" name="weight gain" id="weight gain" value="Набор массы">
+            <label for="weight gain">Набор массы</label>
+          </li>
+          <li class="radio-list__option">
+            <input type="radio" name="unknown" id="unknown" value="Не знаю (Нужен ваш совет)">
+            <label for="unknown">Не знаю (Нужен ваш совет)</label>
+          </li>
+        </ul>
+        <fieldset class="choise__fieldset">
+          <legend>Контактные данные (владельца кота)</legend>
+          <label for="email">E-mail:<sup>*</sup></label>
+          <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
+          <label for="phone">Телефон:<sup>*</sup></label>
+          <input type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90">
+        </fieldset>
+        <label for="comment">Комментарий</label>
+        <textarea name="comment" id="comment" cols="30" rows="10"
+          placeholder="Расскажите обо всех повадках кота"></textarea>
+        <fieldset class="choice__fieldset">
+          <legend>Дополнительно</legend>
+          <ul class="choice__list checkbox-list">
+            <li class="checkbox-list__option">
+              <input type="checkbox" name="Sweetener" id="Sweetener" value="Sweetener" checked>
+              <label for="sweetener">Сахарозаменитель</label>
+            </li>
+            <li class="checkbox-list__option">
+              <input type="checkbox" name="water" id="water" value="Water">
+              <label for="water">Питьевая вода</label>
+            </li>
+            <li class="checkbox-list__option">
+              <input type="checkbox" name="milk" id="milk" value="Milk">
+              <label for="milk">Молоко</label>
+            </li>
+            <li class="checkbox-list__option">
+              <input type="checkbox" name="vitamins" id="vitamins" value="Vitamins">
+              <label for="Sweetener">Витамины</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button catalog__button button--green" type="button">Отправить заявку</button>
+        <small class="choice__legend choise__legend--bottom">
+          <sup>*</sup> — Обязательные поля
+        </small>
+      </form>
+    </section>
+
     <section class="contacts">
       <h2 class="visually-hidden">Как нас найти</h2>
       <p class="contacts__info">приглашаем к сотрудничеству дилеров!</p>
