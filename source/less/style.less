@@ -1,0 +1,56 @@
+@import "normalize.less";
+@import "fonts.less";
+
+body {
+  margin   : 0;
+  padding  : 0;
+  max-width: 320px;
+
+  font-family     : "Oswald", Arial, sans-serif;
+  font-size       : 14px;
+  line-height     : 18px;
+  font-weight     : 400;
+  color           : #000000;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height   : auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden,
+button.visually-hidden {
+  position         : absolute;
+  width            : 1px;
+  height           : 1px;
+  margin           : -1px;
+  border           : 0;
+  padding          : 0;
+  white-space      : nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path        : inset(100%);
+  clip             : rect(0 0 0 0);
+  overflow         : hidden;
+}
+
+@import "blocks/button.less";
+@import "blocks/page-header.less";
+@import "blocks/main-nav.less";
+@import "blocks/promo.less";
+@import "blocks/categories.less";
+@import "blocks/advantages.less";
+@import "blocks/example.less";
+@import "blocks/contacts.less";
+@import "blocks/page-footer.less";
+@import "blocks/catalog.less";
+@import "blocks/product-card.less";
+@import "blocks/extra.less";
+@import "blocks/extra-product-card.less";
+@import "blocks/choice.less";
