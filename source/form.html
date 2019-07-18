@@ -4,14 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>Интернет-магазин фитнес еды для котиков «CAT Energy»</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
     <a href="index.html" class="page-header__logo">
-      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="33" height="38"
+      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="200" height="38"
         alt="Интернет-магазин «CAT Energy»">
-      <img class="page-header__shop-name-image" src="img/logo-mobile-header.svg" alt="«CAT Energy»">
+      <!-- <img class="page-header__shop-name-image" src="img/logo-mobile-header.svg" alt="«CAT Energy»"> -->
     </a>
     <nav class="main-nav">
       <button class="main-nav-toogle" type="button">Открыть меню</button>
@@ -75,7 +76,7 @@
         </div>
         <div class="form__block">
           <label class="form__field-label" for="comment">Комментарий</label>
-          <textarea class="form__text-field" name="comment" id="comment" cols="30" rows="10"
+          <textarea class="form__text-field" name="comment" id="comment" cols="42" rows="8"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
         <div class="form__block">
@@ -108,16 +109,21 @@
 
     <section class="contacts">
       <h2 class="visually-hidden">Как нас найти</h2>
-      <p class="contacts__info">приглашаем к сотрудничеству дилеров!</p>
-      <address class="contacts__text">ул. Большая Конюшенная, д. 19/8
+      <div class="contacts__wrap">
+        <p class="contacts__info">приглашаем к сотрудничеству дилеров!</p>
+        <address class="contacts__text">ул. Большая Конюшенная, д. 19/8
         Санкт-Петербург</address>
-      <div class="contacts__map"></div>
+      </div>
+      <div class="contacts__map">
+        <img src="img/bg-map-mobile@1x.png" width="320px" height="360px" alt="ул. Большая Конюшенная, д. 19/8
+        Санкт-Петербург">
+      </div>
     </section>
   </main>
 
   <footer class="page-footer">
     <a class="page-footer__logo">
-      <img class="page-footer__logo" src="img/logo-mobile-header.svg" alt="«CAT Energy»">
+      <img class="page-footer__logo" src="img/logo-footer.svg" width="128" height="24" alt="«CAT Energy»">
     </a>
     <div class="page-footer__social social">
       <ul class="social__list">
