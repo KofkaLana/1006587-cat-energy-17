@@ -11,3 +11,29 @@
   padding   : 0;
   list-style: none;
 }
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+    display: flex;
+    align-self: center;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    width: 470px;
+
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    width: 500px;
+  }
+}

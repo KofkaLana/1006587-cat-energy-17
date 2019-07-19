@@ -1,0 +1,28 @@
+.page-header {
+  // display: flex;
+  width     : 320px;
+  margin    : 0 auto;
+  padding   : 10px 20px 15px;
+}
+
+.page-header__logo {
+  display       : inline-block;
+  vertical-align: middle;
+  flex-shrink   : 0;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    display        : flex;
+    justify-content: space-between;
+    width          : @tablet-width;
+    padding        : 25px 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    width  : @desktop-width;
+    padding: 55px 110px 20px;
+  }
+}
