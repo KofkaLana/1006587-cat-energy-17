@@ -9,3 +9,22 @@
 .extra-product-card__info {
   line-height: 14px;
 }
+
+@media (min-width: @tablet-width) {
+  .extra-product-card {
+    padding: 28px 38px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .extra-product-card {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    padding        : 15px 0;
+  }
+
+  .extra-product-card__button {
+    width: auto;
+  }
+}
