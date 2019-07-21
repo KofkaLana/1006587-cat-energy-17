@@ -1,0 +1,23 @@
+.slider__wrap {
+  width  : 320px;
+  margin : 0 auto;
+  padding: 0 20px;
+
+  box-sizing: border-box;
+
+  border: 1px solid; // временно для сетки
+}
+
+.slider__list {
+  margin : 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .slider__wrap {
+    width  : @tablet-width;
+    padding: 0 30px 65px;
+  }
+}

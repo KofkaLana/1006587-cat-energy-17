@@ -2,7 +2,7 @@
   border-top: 1px solid #e6e6e6;
 
   a {
-    display: inline-block;
+    display   : inline-block;
     // padding: 25px 0;
 
     color: #000000;
@@ -20,5 +20,11 @@
     &:last-child {
       border: none;
     }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__item a {
+    // color: #ffffff;
   }
 }

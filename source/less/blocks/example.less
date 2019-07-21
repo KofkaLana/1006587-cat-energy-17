@@ -1,9 +1,74 @@
 .example {
-  padding: 35px 20px 40px;
+  padding-bottom  : 40px;
+  background-color: #f2f2f2;
+}
 
-  background-color: #f2f2f2
+.example__wrap {
+  width  : 320px;
+  margin : 0 auto;
+  padding: 0 20px;
+
+  box-sizing: border-box;
 }
 
 .example__title {
   .title;
+  width  : 320px;
+  margin : 0 auto;
+  padding: 35px 20px 40px;
+
+  box-sizing: border-box;
+}
+
+.example__text {
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .example {
+    display       : flex;
+    flex-direction: column;
+    padding-bottom: 0;
+    background    : #ffffff;
+  }
+
+  .example__wrap {
+    width  : @tablet-width;
+    padding: 0 30px;
+
+    border: 1px solid; // временно для сетки
+  }
+
+  .example__title {
+    width    : @tablet-width;
+    margin   : 0 auto;
+    font-size: @tablet-font-size;
+    padding  : 55px 30px 70px;
+
+    border: 1px solid; // временно для сетки
+  }
+
+  .example__slider {
+    background-color: #f2f2f2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    flex-direction: row;
+    flex-wrap     : wrap;
+  }
+
+  .example__title {
+    width  : @desktop-width;
+    padding: 65px 40px 80px;
+  }
+
+  .example__wrap {
+    width  : 570px;
+    margin : 0;
+    padding: 75px 40px 65px;
+
+    background-color: #f2f2f2;
+  }
 }
