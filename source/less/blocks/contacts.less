@@ -82,3 +82,53 @@
     background: #f9f3ee url("/source/img/bg-map-desktop@1x.png") no-repeat;
   }
 }
+
+.contacts__map {
+  height    : 362px;
+  background: #f9f3ee url("/source/img/bg-map-mobile@1x.png") no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__wrap {
+    width  : @tablet-width;
+    margin : 0 auto;
+    padding: 65px 40px;
+
+    justify-content: space-between;
+  }
+
+  .contacts__info {
+    width      : 175px;
+    margin-left: 40px;
+  }
+
+  .contacts__text {
+    width       : 200px;
+    margin-right: 40px;
+    text-align  : right;
+  }
+
+  .contacts__map {
+    height    : 395px;
+    background: #f9f3ee url("/source/img/bg-map-tablet@1x.png") no-repeat;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__wrap {
+    position: absolute;
+    top     : 95px;
+    left    : 100px;
+
+    width  : 570px;
+    margin : 0;
+    padding: 70px 60px 60px;
+
+    background-color: #ffffff;
+  }
+
+  .contacts__map {
+    height    : 400px;
+    background: #f9f3ee url("/source/img/bg-map-desktop@1x.png") no-repeat;
+  }
+}
