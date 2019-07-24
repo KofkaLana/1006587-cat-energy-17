@@ -1,28 +1,52 @@
 .more-products {
+  padding: 27px 0 25px;
   text-align: center;
 
   box-sizing: border-box;
 }
 
+.more-products__img {
+  margin-bottom: 27px;
+  opacity: 0.2;
+}
+
 .more-products__show-more {
-  margin: 25px 0 0;
+  margin: 0;
   text-transform: uppercase;
 }
 
 .more-products__button {
-  margin-top: 20px;
+  margin-top: 9px;
 }
 
 @media (min-width: @tablet-width) {
   .more-products {
     width: 324px;
-    padding: 165px 35px 40px;
+    padding: 55px 38px 40px;
 
     border: 1px solid #e6e6e6;
+
+    p {
+      width: 179px;
+      margin: 0 auto;
+    }
+  }
+
+  .more-products__img {
+    width: 60px;
+    height: 60px; // временно для сетки
+    margin-bottom: 52px;
+  }
+
+  .more-products__show-more {
+    margin-bottom: 16px;
+
+    font-size: 20px;
+    line-height: 20pxl
   }
 
   .more-products__button {
-    margin-top: 90px;
+    margin-top: 62px;
   }
 }
 
