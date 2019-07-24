@@ -9,10 +9,7 @@
 
 .example__title {
   .title;
-  width: 320px;
-  margin: 0 auto;
-  padding: 35px 20px 40px;
-  box-sizing: border-box;
+  padding: 35px 0 40px;
 }
 
 .example__text {
@@ -21,17 +18,13 @@
 
 @media (min-width: @tablet-width) {
   .example {
-    display: flex;
-    flex-direction: column;
     padding-bottom: 0;
     background: linear-gradient(to bottom, #ffffff 69%, #f2f2f2 69%);
   }
 
   .example__title {
-    width: @tablet-width;
-    margin: 0 auto;
     font-size: @tablet-font-size;
-    padding: 55px 30px 70px;
+    padding: 55px 0 70px;
   }
 
   .example__slider {
@@ -42,22 +35,25 @@
 
 @media (min-width: @desktop-width) {
   .example {
-    flex-direction: row;
-    flex-wrap: wrap;
-
     background: linear-gradient(to bottom, #ffffff 37%, #f2f2f2 37%);
+  }
+
+  .example__wrap {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .example__title {
     width: @desktop-width;
-    padding: 65px 40px 80px;
+    padding: 65px 0 80px;
   }
 
-  .example__wrap {
+  .example__text-wrap {
     width: 570px;
     margin: 0 40px 0 auto;
     padding: 75px 40px 65px 0;
     background-color: #f2f2f2;
+    box-sizing: border-box;
   }
 
   .example__slider {
