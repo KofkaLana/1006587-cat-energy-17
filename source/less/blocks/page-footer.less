@@ -27,16 +27,27 @@
     width: @tablet-width;
     padding: 60px 30px;
     flex-direction: row;
-    justify-content: space-between;
   }
 
   .page-footer__logo {
+    display: block;
+    width: 162px;
+    margin-right: auto;
     padding: 0;
   }
 
   .page-footer__social {
+    width: 324px;
+    margin-left: auto;
     padding: 0;
     border: none;
+  }
+
+  .page-footer__copyright {
+    display: flex;
+    justify-content: flex-end;
+    width: 162px;
+    margin-left: auto;
   }
 }
 
@@ -44,5 +55,17 @@
   .page-footer__wrap {
     width: @desktop-width;
     padding: 60px 40px 55px;
+  }
+
+  .page-footer__logo {
+    width: 245px;
+  }
+
+  .page-footer__social {
+    widows: 570px;
+  }
+
+  .page-footer__copyright {
+    width: 245px;
   }
 }
