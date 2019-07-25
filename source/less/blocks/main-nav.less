@@ -14,11 +14,26 @@
   list-style: none;
 }
 
+.main-nav__toggle {
+  position: absolute;
+  top: 32px;
+  right: 23px;
+
+  width: 18px;
+  height: 18px;
+
+  display: block;
+  background: url("../img/icon-close.svg");
+
+  cursor: pointer;
+  border: none;
+}
+
 @media (min-width: @tablet-width) {
   .main-nav {
-    width: 460px;
+    width: 510px;
     margin: 0;
-    display: flex;
+
     align-self: center;
     font-size: 18px;
     line-height: 25px;
@@ -30,13 +45,16 @@
   }
 
   .main-nav__list {
-    display: flex;
-    justify-content: space-between;
-    width: 460px;
+    width: 510px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .main-nav {
+    width: 570px;
+    font-size: 20px;
+  }
+
   .main-nav__list {
     width: 570px;
   }
