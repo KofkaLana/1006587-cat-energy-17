@@ -1,16 +1,36 @@
 .choice {
-  padding: 30px 20px 35px;
+  margin: 30px 0 35px;
+}
+
+.choice__wrap {
+  .container;
 }
 
 .choice__title {
-  margin: 0;
-
-  font-size  : 36px;
-  line-height: 60px;
-  font-weight: 400;
+  .title;
 }
 
 .choice__text {
-  font-size     : 16px;
+  font-size: 16px;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .choice {
+    margin: 70px 0;
+  }
+
+  .choice__text {
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .choice {
+    margin: 85px 0 80px;
+  }
+
+  .choice__text {
+    margin-left: 0;
+  }
 }

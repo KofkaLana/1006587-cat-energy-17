@@ -1,27 +1,29 @@
 .button {
-  display       : inline-block;
+  display: inline-block;
   vertical-align: middle;
-  width         : 100%;
-  padding       : 15px 10px;
-
-  font-size  : 14px;
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  text-align : center;
-
-  text-transform : uppercase;
+  text-align: center;
+  text-transform: uppercase;
   text-decoration: none;
-  box-sizing     : border-box;
-
+  box-sizing: border-box;
   border: none;
 }
 
 .button--green {
-  color           : #ffffff;
+  color: #ffffff;
   background-color: #68b738;
 }
 
 .button--grey {
-  color           : #000000;
+  color: #444444;
   background-color: #f2f2f2;
+}
+
+@media (min-width: @tablet-width) {
+  font-size: 20px;
+  line-height: 20px;
 }

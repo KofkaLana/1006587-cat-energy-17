@@ -1,0 +1,47 @@
+.page-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+.page-header__logo {
+  display: inline-block;
+  vertical-align: middle;
+
+  height: 38px;
+  margin: 11px 20px 16px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    flex-direction: row;
+    justify-content: space-between;
+    width: @tablet-width;
+    padding: 25px 30px;
+  }
+
+  .page-header__logo {
+    height: 58px;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: @desktop-width;
+    padding: 55px 40px 20px;
+
+    &--inner {
+      position: static;
+    }
+  }
+}

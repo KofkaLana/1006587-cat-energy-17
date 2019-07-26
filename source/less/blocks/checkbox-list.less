@@ -1,0 +1,21 @@
+@media (min-width: @tablet-width) {
+  .checkbox-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .checkbox-list__option {
+    width: 324px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .checkbox-list__option {
+    width: 245px;
+    margin-right: 80px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+}

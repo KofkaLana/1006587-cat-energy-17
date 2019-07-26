@@ -1,11 +1,13 @@
 .categories {
-  padding: 0 20px;
+  .container;
+  margin-top: 20px;
 }
 
 .categories__program {
-  margin: 20px 0;
+  margin: 0 0 20px;
   padding: 20px;
   background-color: #f2f2f2;
+  box-sizing: border-box;
 }
 
 .categories__header {
@@ -20,4 +22,36 @@
   font-size: 16px;
   line-height: 16px;
   color: #000000;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .categories__program {
+    margin-bottom: 30px;
+    padding: 80px 50px 60px;
+  }
+
+  .categories__header {
+    font-size: 36px;
+  }
+
+  .categories__info {
+    width: 390px;
+  }
+
+  .categories__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .categories {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .categories__program {
+    width: 570px;
+  }
 }
