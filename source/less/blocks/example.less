@@ -1,5 +1,6 @@
 .example {
-  padding-bottom: 40px;
+  padding-top: 18px;
+  padding-bottom: 38px;
   background-color: #f2f2f2;
 }
 
@@ -7,34 +8,120 @@
   .container;
 }
 
+
+.example__text-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .example__title {
   .title;
-  padding: 35px 0 40px;
+  margin-bottom: 24px;
 }
 
 .example__text {
-  margin: 0;
+  width: 270px;
+  margin: 0 0 26px;
+
+  font-family: "Arial";
+  color: #444444;
+}
+
+.example__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 82px;
+  margin-right: 33px;
+  padding: 8px 20px 0;
+
+  border: 1px solid #444444;
+  border-bottom: none;
+
+  &--time {
+    margin-right: 0;
+    padding: 8px 19px 0 20px;
+  }
+}
+
+.example__value {
+  font-size: 24px;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+
+.example__field {
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+  text-align: center;
+}
+
+.example__info {
+  margin: 23px auto 0;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 @media (min-width: @tablet-width) {
   .example {
+    padding-top: 47px;
     padding-bottom: 0;
     background: linear-gradient(to bottom, #ffffff 69%, #f2f2f2 69%);
   }
 
   .example__title {
     font-size: @tablet-font-size;
-    padding: 55px 0 70px;
+    margin: 0 0 64px;
+  }
+
+  .example__text {
+    width: 702px;
+    margin-bottom: 60px;
+  }
+
+  .example__info {
+    width: 192px;
+    margin: 0;
+    margin-left: auto;
+
+    font-size: 20px;
+    line-height: 28px;
+    text-align: right;
+  }
+
+  .example__box {
+    min-width: 98px;
+    margin: -6px 43px 0 0;
+    padding: 13px 31px 0;
+
+    &--time {
+      padding: 13px 17px 0;
+    }
+  }
+
+  .example__value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__field {
+    font-size: 14px;
+    line-height: 14px;
   }
 
   .example__slider {
-    margin: 0 auto;
+    height: 544px; //временно, чтобы pixelperfect подогнать
+    margin: 173px auto 0;
     // background: linear-gradient(to right,#f2f2f2 50%, #eaeaea 50%) ;
   }
 }
 
 @media (min-width: @desktop-width) {
   .example {
+    margin-top: 32px;
+    padding-top: 0;
     background: linear-gradient(to bottom, #ffffff 37%, #f2f2f2 37%);
   }
 
@@ -45,7 +132,7 @@
 
   .example__title {
     width: @desktop-width;
-    padding: 65px 0 80px;
+    margin-bottom: 71px;
   }
 
   .example__text-wrap {
@@ -56,8 +143,29 @@
     box-sizing: border-box;
   }
 
+  .example__text {
+    width: 439px;
+    margin-bottom: 33px;
+  }
+
+  .example__box {
+    width: 103px;
+    padding: 15px 31px 0;
+
+    &--time {
+      padding: 15px 17px 0;
+    }
+  }
+
+  .example__info {
+    margin-top: -22px;
+
+    text-align: left;
+  }
+
   .example__slider {
     width: 610px;
+    height: 467px; //временно
     margin: 0 auto 0 0;
   }
 }

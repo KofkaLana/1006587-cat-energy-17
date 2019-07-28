@@ -14,15 +14,22 @@
 
   height: 38px;
   margin: 11px 20px 16px;
-}
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
 
 @media (min-width: @tablet-width) {
   .page-header {
+    width: @tablet-width;
+    padding: 9px 30px;
     flex-direction: row;
     justify-content: space-between;
-    width: @tablet-width;
-    padding: 25px 30px;
   }
 
   .page-header__logo {
@@ -38,7 +45,7 @@
     left: 0;
     right: 0;
     width: @desktop-width;
-    padding: 55px 40px 20px;
+    padding: 40px 40px 20px;
 
     &--inner {
       position: static;

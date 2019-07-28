@@ -1,24 +1,27 @@
 .advantages {
   .container;
-  margin-top: 35px;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 }
 
 .advantages__title {
   .title;
-  margin-bottom: 45px;
+  margin-bottom: 32px;
 }
 
 .advantages__list {
   margin: 0;
   padding: 0;
+
+  font-family: "Arial";
   list-style: none;
 }
 
 .advantages__item {
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 27px;
   padding-left: 80px;
+
+  color: #444444;
 
   &::before {
     position: absolute;
@@ -29,19 +32,54 @@
     content: "";
     background-color: #68b738;
   }
+
+  &--eco {
+    &::before {
+      background-image: url("../img/advantage-leaf@1x.png");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--powder {
+    &::before {
+      background-image: url("../img/advantage-powder@1x.png");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--food {
+    &::before {
+      background-image: url("../img/advantage-dining@1x.png");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--time {
+    &::before {
+      background-image: url("../img/advantage-clock@1x.png");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
   .advantages {
-    margin-top: 55px;
+    margin-top: 46px;
     margin-bottom: 0;
+    padding-left: 31px;
   }
 
   .advantages__title {
+    margin-bottom: 34px;
     font-size: @tablet-font-size;
   }
 
   .advantages__list {
+    margin-bottom: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -50,25 +88,26 @@
   }
 
   .advantages__item {
-    width: 250px;
-    margin-bottom: 55px;
+    width: 248px;
+    margin-bottom: 44px;
     margin-top: 30px;
     padding: 120px 74px 50px 0;
 
     &::before {
-      top: 0;
+      top: 7px;
       width: 80px;
       height: 80px;
     }
 
     &::after {
       position: absolute;
-      top: 87px;
-      left: 125px;
+      top: 98px;
+      left: 115px;
       width: 135px;
       height: 234px;
       content: counter(li);
       counter-increment: li;
+      font-family: "Oswald";
       font-size: 281px;
       color: #f2f2f2;
       z-index: -1;
@@ -78,10 +117,21 @@
 
 @media (min-width: @desktop-width) {
   .advantages {
-    margin-top: 80px;
+    margin-top: 44px;
+    padding-left: 40px;
+    padding-right: 37px;
+  }
+
+  .advantages__list {
+    margin-bottom: 0;
   }
 
   .advantages__item {
+    margin-right: 77px;
     padding-right: 0;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
   }
 }
