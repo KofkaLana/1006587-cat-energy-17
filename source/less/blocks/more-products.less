@@ -1,18 +1,30 @@
 .more-products {
-  padding: 27px 0 25px;
+  padding: 27px 20px 24px;
   text-align: center;
 
   box-sizing: border-box;
 }
 
 .more-products__img {
-  margin-bottom: 27px;
+  margin-bottom: 19px;
   opacity: 0.2;
 }
 
 .more-products__show-more {
   margin: 0;
+
+  font-size: 16px;
+  line-height: 20px;
   text-transform: uppercase;
+}
+
+.more-products__tastes {
+  margin: 8px 0 11px;
+
+
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .more-products__button {
@@ -28,14 +40,13 @@
 
     p {
       width: 179px;
-      margin: 0 auto 16px;
+      margin: 0 auto 26px;
     }
   }
 
   .more-products__img {
     width: 60px;
-    height: 60px; // временно для сетки
-    margin-bottom: 52px;
+    margin-bottom: 42px;
   }
 
   .more-products__show-more {
@@ -43,13 +54,27 @@
     line-height: 20px;
   }
 
+  .more-products__tastes {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
   .more-products__button {
-    margin-top: 46px;
+    margin-top: 57px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .more-products {
     width: 245px;
+    padding-top: 52px;
+
+    p {
+      width: 169px;
+    }
+  }
+
+  .more-products__button {
+    margin-top: 59px;
   }
 }
