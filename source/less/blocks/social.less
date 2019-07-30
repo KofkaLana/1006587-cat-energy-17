@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 
   margin: 0;
   padding: 0;
@@ -39,7 +40,7 @@
 
   &:hover,
   &:focus {
-    svg {
+    path {
       fill: #70ba42;
     }
   }
@@ -50,10 +51,6 @@
 }
 
 @media (min-width: @tablet-width) {
-  .social__list {
-    align-items: flex-start;
-  }
-
   .social__item {
     margin-left: 11px;
     margin-right: 18px;
