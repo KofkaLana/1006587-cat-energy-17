@@ -1,5 +1,7 @@
 .extra {
   margin: 25px 0 34px;
+
+  overflow: hidden;
 }
 
 .extra__wrap {
@@ -7,22 +9,11 @@
 }
 
 .extra__title {
-  position: relative;
-  margin: 0 0 34px;
-
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
+  .title-line;
 
   &::after {
-    position: absolute;
-    top: 14px;
-    right: -200px;
-    left: 248px;
-
+    margin-left: 23px;
     height: 3px;
-    content: "";
-    background: #68b738;
   }
 }
 
@@ -76,25 +67,15 @@
   }
 
   .extra__title {
-    margin: 0 36px 79px;
-
-    font-size: 36px;
-    line-height: 36px;
+    margin: 0 0 79px;
 
     &::before {
-      position: absolute;
-      top: 21px;
-      right: 672px;
-      left: -200px;
-
       height: 3px;
-      content: "";
-      background: #68b738;
+      margin-right: 38px;
     }
 
     &::after {
-      top: 21px;
-      left: 373px;
+      margin-left: 38px;
     }
   }
 
@@ -133,16 +114,7 @@
   }
 
   .extra__title {
-    width: 100%;
-    margin: 0 auto 80px;
-
-    &::before {
-      right: 1259px;
-    }
-
-    &::after {
-      left: 373px;
-    }
+    margin: 0 0 80px;
   }
 
   .extra__list {

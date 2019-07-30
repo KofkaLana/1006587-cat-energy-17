@@ -15,7 +15,7 @@
       <img class="page-header__logo-image" src="img/logo-mobile.svg" width="200" height="38"
         alt="Интернет-магазин «CAT Energy»">
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list site-list ">
         <li class="site-list__item site-list__item--inner">
@@ -283,9 +283,10 @@
       <div class="contacts__wrap">
         <div class="contacts__address">
           <p class="contacts__info">приглашаем к&nbsp;сотрудничеству дилеров!</p>
-          <address class="contacts__text">ул. Большая <br> Конюшенная, д. 19/8
-            <p></p>
-            Санкт-Петербург</address>
+          <div class="contacts__text">
+            <p class="contacts__street">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="contacts__city">Санкт-Петербург</p>
+          </div>
         </div>
       </div>
       <div class="contacts__map">
@@ -362,6 +363,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/script.js"></script>
 
 </body>
 
