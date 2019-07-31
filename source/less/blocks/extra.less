@@ -1,5 +1,7 @@
 .extra {
-  margin-bottom: 35px;
+  margin: 25px 0 34px;
+
+  overflow: hidden;
 }
 
 .extra__wrap {
@@ -7,10 +9,12 @@
 }
 
 .extra__title {
-  margin: 30px 0;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
+  .title-line;
+
+  &::after {
+    margin-left: 23px;
+    height: 3px;
+  }
 }
 
 .extra__list {
@@ -20,19 +24,40 @@
 }
 
 .extra__item {
-  padding: 15px 0;
+  padding: 13px 0 17px;
   border-bottom: 1px solid #cdcdcd;
+
+  &:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
 }
 
 .extra__gift {
+  position: relative;
   margin-top: 40px;
   background: #68b738 url("/img/gift-photo-mobile@1x.jpg") no-repeat;
+
+  svg {
+    position: absolute;
+    top: 65px;
+    left: 113px;
+
+    width: 55px;
+    height: 60px;
+    fill: #ffffff;
+  }
 }
 
 .extra__text {
-  width: 180px;
-  margin: 0;
-  padding: 190px 60px 45px;
+  position: relative;
+  width: 162px;
+  margin: 0 auto;
+  padding: 186px 0 42px;
+
+  font-family: "Arial";
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
   color: #ffffff;
 }
 
@@ -42,22 +67,44 @@
   }
 
   .extra__title {
-    margin: 0 38px 70px;
+    margin: 0 0 79px;
+
+    &::before {
+      height: 3px;
+      margin-right: 38px;
+    }
+
+    &::after {
+      margin-left: 38px;
+    }
+  }
+
+  .extra__item {
+    border: 1px solid #cdcdcd;
+    border-top: none;
   }
 
   .extra__gift {
     margin-top: 70px;
+
+    svg {
+      top: 64px;
+      left: 90px;
+    }
   }
 
   .extra__text {
-    width: 190px;
-    padding: 75px 100px 70px;
+    width: 161px;
+    margin-right: 122px;
+    padding: 71px 0 67px;
+    text-align: left;
   }
 }
 
 @media (min-width: @desktop-width) {
   .extra {
-    margin-bottom: 90px;
+    margin-top: 31px;
+    margin-bottom: 87px;
   }
 
   .extra__wrap {
@@ -67,21 +114,32 @@
   }
 
   .extra__title {
-    width: 100%;
-    margin-bottom: 80px;
+    margin: 0 0 80px;
   }
 
   .extra__list {
     width: 895px;
   }
 
+  .extra__item {
+    border-right: none;
+    border-left: none;
+  }
+
   .extra__gift {
     width: 245px;
     margin: 0;
+
+    svg {
+      left: 96px;
+    }
   }
 
   .extra__text {
     width: 180px;
-    padding: 190px 38px 28px;
+    margin-right: auto;
+    padding: 190px 0 28px;
+
+    text-align: center;
   }
 }

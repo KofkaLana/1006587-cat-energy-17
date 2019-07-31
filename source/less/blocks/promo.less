@@ -2,7 +2,7 @@
   text-align: center;
   color: #ffffff;
 
-  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #65a93c 61%, #ffffff 61%);
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #65a93c 64%, #ffffff 64%);
   background-repeat: no-repeat;
   background-position: center top;
 }
@@ -10,19 +10,19 @@
 .promo__wrapper {
   .container;
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 43px;
 }
 
 .promo__title {
   margin: 0;
-  padding-top: 40px;
+  padding-top: 27px;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
 }
 
 .promo__tagline {
-  margin: 25px 0 0;
+  margin: 26px 0 0;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
@@ -30,7 +30,7 @@
 
 .promo__img {
   display: block;
-  margin-top: 30px;
+  margin-top: 29px;
 }
 
 .promo__button {
@@ -42,7 +42,8 @@
 
 @media (min-width: @tablet-width) {
   .promo {
-    color: #000000;
+    padding-top: 38px;
+    color: #111111;
     text-align: left;
     background: none;
   }
@@ -51,7 +52,7 @@
     position: relative;
     width: 430px;
     margin-bottom: 0;
-    padding: 0 90px;
+    padding: 0 87px;
     background: none;
   }
 
@@ -59,10 +60,11 @@
     font-size: 60px;
     line-height: 60px;
     font-weight: 400;
+    padding-top: 0;
   }
 
   .promo__tagline {
-    margin-bottom: 49px;
+    margin: 41px 0 47px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -75,6 +77,7 @@
   .promo__button {
     position: relative;
     width: 245px;
+    padding: 15px 10px 16px;
     z-index: 2;
 
     left: 0;
@@ -86,7 +89,7 @@
 
 @media (min-width: @desktop-width) {
   .promo {
-    padding-top: 204px;
+    padding-top: 221px;
     margin-bottom: 80px;
 
     background-image: url("/img/index-background-desktop@1x.jpg"), linear-gradient(to right, #ffffff 50%, #65a93c 50%);
@@ -96,7 +99,7 @@
 
   .promo__wrapper {
     display: flex;
-    padding-bottom: 55px;
+    padding-bottom: 39px;
   }
 
   .promo__wrap {
@@ -116,8 +119,8 @@
   }
 
   .promo__button {
-    width: 280px;
-    position: inherit;
-    left: 0;
+    width: 245px;
+    padding: 14px 10px 17px 8px;
+    position: static;
   }
 }
