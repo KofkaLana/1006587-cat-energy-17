@@ -23,7 +23,7 @@
   width: 270px;
   margin: 0 0 26px;
 
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   color: #444444;
 }
 
@@ -52,7 +52,7 @@
   width: 92px;
   margin-top: -13px;
 
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   color: #444444;
@@ -86,11 +86,15 @@
   text-transform: uppercase;
 }
 
+.example__slider {
+  margin-top: 34px;
+}
+
 @media (min-width: @tablet-width) {
   .example {
     padding-top: 47px;
     padding-bottom: 0;
-    background: linear-gradient(to bottom, #ffffff 69%, #f2f2f2 69%);
+    background: linear-gradient(to bottom, #ffffff 57%, #f2f2f2 57%);
   }
 
   .example__text-wrap {
@@ -134,8 +138,7 @@
   }
 
   .example__slider {
-    height: 544px; //временно, чтобы pixelperfect подогнать
-    margin: 173px auto 0;
+    margin: 69px auto 0;
     // background: linear-gradient(to right,#f2f2f2 50%, #eaeaea 50%) ;
   }
 }
@@ -158,9 +161,9 @@
   }
 
   .example__text-wrap {
-    width: 570px;
-    margin: 0 40px 0 auto;
-    padding: 75px 40px 65px 0;
+    width: 480px;
+    margin: 0 90px 0 0;
+    padding: 75px 40px 42px 0;
     background-color: #f2f2f2;
     box-sizing: border-box;
   }
@@ -170,9 +173,13 @@
     margin-bottom: 33px;
   }
 
+  .example__box {
+    margin-top: 31px;
+  }
+
   .example__info {
     width: 325px;
-    margin-top: -22px;
+    margin-top: 42px;
     margin-left: 0;
 
     text-align: left;
@@ -180,7 +187,6 @@
 
   .example__slider {
     width: 610px;
-    height: 467px; //временно
     margin: 0 auto 0 0;
   }
 }
