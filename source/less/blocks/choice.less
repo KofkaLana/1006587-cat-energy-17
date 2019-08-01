@@ -1,5 +1,7 @@
 .choice {
-  margin: 30px 0 35px;
+  margin: 32px 0 35px;
+
+  overflow: hidden;
 }
 
 .choice__wrap {
@@ -8,20 +10,32 @@
 
 .choice__title {
   .title;
+  margin: 0 0 23px;
 }
 
 .choice__text {
+  margin: 0 0 40px;
   font-size: 16px;
   text-transform: uppercase;
 }
 
 @media (min-width: @tablet-width) {
   .choice {
-    margin: 70px 0;
+    margin: 67px 0;
+  }
+
+  .choice__title {
+    margin-bottom: 60px;
+    font-size: @tablet-font-size;
   }
 
   .choice__text {
+    width: 340px;
     margin-left: 40px;
+    margin-bottom: 69px;
+
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
