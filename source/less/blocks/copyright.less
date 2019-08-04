@@ -1,7 +1,9 @@
 .copyright {
   display: flex;
   align-items: center;
-  padding-top: 18px;
+
+  margin-left: -4px;
+  padding-top: 15px;
 }
 
 .copyright__link {
@@ -20,11 +22,15 @@
 
 .copyright__link-logo {
   width: 30px;
+  margin-right: 2px;
   text-align: right;
 
+  svg {
+    width: 40px;
+    margin-top: 4px;
+  }
+
   path {
-    width: 27px;
-    height: 34px;
     fill: #444444;
   }
 
@@ -46,14 +52,26 @@
   }
 
   .copyright__link {
-    margin-right: 21px;
+    margin-right: 13px;
     margin-bottom: 9px;
+  }
+
+  .copyright__link-logo {
+    width: 36px;
+
+    svg {
+      margin-top: 2px;
+    }
   }
 }
 
 
 @media (min-width: @desktop-width) {
   .copyright__link {
-    margin-right: 17px;
+    margin-bottom: 8px;
+  }
+
+  .copyright__link-logo {
+    width: 32px;
   }
 }
