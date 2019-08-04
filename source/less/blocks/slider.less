@@ -5,12 +5,12 @@
 
 .slider__list {
   margin: 0;
-  padding: 0 0 35px;
+  padding: 0 0 31px;
   list-style: none;
 }
 
 .slider__toggles {
-  width: 280px;
+  width: 285px;
 
   display: flex;
   justify-content: center;
@@ -28,21 +28,22 @@
 
 .slider__scale {
   position: relative;
-  width: 84px;
-  height: 14px;
-  margin: 0 19px;
+  width: 83px;
+  height: 13px;
+  margin: 0 11px;
 
   border: 1px solid #cdcdcd;
   border-radius: 7px;
+  background-color: #ffffff;
 }
 
 .slider__bar {
   position: absolute;
   top: 3px;
-  left: 6px;
+  left: 4px;
 
   width: 35px;
-  height: 6px;
+  height: 5px;
 
   border: 1px solid #cdcdcd;
   background: #68b738;
@@ -51,11 +52,19 @@
 
 @media (min-width: @tablet-width) {
   .slider__wrap {
-    padding-bottom: 70px;
+    padding-bottom: 73px;
   }
 
   .slider__list {
-    padding-bottom: 23px;
+    padding-bottom: 20px;
+  }
+
+  .slider__toggles {
+    width: 708px;
+  }
+
+  .slider__toggle {
+    font-size: 20px;
   }
 }
 
