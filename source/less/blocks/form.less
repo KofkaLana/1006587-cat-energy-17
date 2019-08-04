@@ -5,8 +5,13 @@
 }
 
 .form__block {
-  margin-bottom: 25px;
-  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+  textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 .form__block-title {
@@ -14,24 +19,24 @@
   text-transform: none;
 
   &::after {
-    margin-left: 20px;
+    margin-left: 15px;
 
-    height: 2px;
+    height: 3px;
   }
 }
 
 .form__field-row {
   display: flex;
   align-items: center;
-  margin: 0 0 14px;
+  margin: 0 0 13px;
 
   &--mail {
     position: relative;
 
     svg {
       position: absolute;
-      top: 18px;
-      right: 13px;
+      top: 16px;
+      right: 16px;
 
       width: 17px;
       height: 13px;
@@ -43,8 +48,8 @@
 
     svg {
       position: absolute;
-      top: 15px;
-      right: 8px;
+      top: 14px;
+      right: 13px;
 
       width: 20px;
       height: 20px;
@@ -54,7 +59,7 @@
 
 .form__field-label {
   min-width: 40px;
-  margin-right: 16px;
+  margin-right: 12px;
   flex-shrink: 0;
 
   &--title {
@@ -75,8 +80,8 @@
 }
 
 .form__block-list {
-  margin: 0 0 32px;
-  padding: 25px 0 0;
+  margin: -20px 0 21px;
+  padding: 26px 0 2px;
   list-style: none;
 }
 
@@ -87,7 +92,8 @@
 }
 
 .form__button {
-  margin-bottom: 24px;
+  margin-top: -18px;
+  margin-bottom: 21px;
 }
 
 .form__legend {
@@ -97,7 +103,7 @@
 
 @media (min-width: @tablet-width) {
   .form {
-    padding: 0 40px;
+    padding: 0 37px 0 40px;
 
     font-size: 20px;
     line-height: 20px;
@@ -105,10 +111,11 @@
 
   .form__block {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 73px;
 
     textarea {
-      width: 610px;
+      width: 630px;
+      padding: 11px 17px 10px;
     }
   }
 
@@ -118,25 +125,33 @@
     &--mail {
       svg {
         top: 20px;
-        right: 21px;
+        right: 18px;
       }
     }
 
     &--tel {
       svg {
-        top: 15px;
-        right: 14px;
+        top: 17px;
+        right: 15px;
       }
     }
+  }
+
+  .form__field-label {
+    margin-right: 18px;
   }
 
   .form__block-list {
     width: 100%;
   }
 
+  .form__text-field {
+    padding: 10px 20px;
+  }
+
   .form__block-title {
-    margin-left: -40px;
-    margin-bottom: 80px;
+    margin-left: -42px;
+    margin-bottom: 76px;
 
     br {
       display: none;
@@ -148,12 +163,8 @@
 
     &::before {
       margin-right: 40px;
-      height: 2px;
+      height: 3px;
     }
-  }
-
-  .form__text-field {
-    padding: 10px;
   }
 
   .form__wrap {
@@ -162,12 +173,16 @@
 
   .form__button {
     width: 283px;
-    margin-right: 60px;
+    margin-right: 62px;
     margin-bottom: 0;
+
+    font-size: 20px;
+    padding: 15px 10px;
   }
 
   .form__legend {
-    align-self: center;
+    margin-top: -3px;
+    align-self: flex-start;
     line-height: 16px;
   }
 }
@@ -180,14 +195,22 @@
   .form__wrap {
     .form__block {
       width: 570px;
+      margin-bottom: 47px;
     }
   }
 
   .form__block {
     width: 100%;
+    margin-top: 5px;
+    margin-bottom: 49px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    textarea {
+      margin-bottom: 20px;
+      padding: 15px 18px 18px;
+    }
   }
 
   .form__field-row {
