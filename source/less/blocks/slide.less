@@ -1,7 +1,34 @@
 .slide {
   display: none;
 
+  img {
+    display: block;
+    width: 320px;
+    margin-left: -19px;
+  }
+
   &--show {
     display: block;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .slide {
+    width: 708px;
+
+    img {
+      width: 693px;
+      margin-left: -17px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slide {
+    img {
+      width: 690px;
+      margin-top: -187px;
+      margin-left: -41px;
+    }
   }
 }

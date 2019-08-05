@@ -1,6 +1,6 @@
 .example {
   padding-top: 18px;
-  padding-bottom: 38px;
+  padding-bottom: 35px;
   background-color: #f2f2f2;
 }
 
@@ -23,18 +23,20 @@
   width: 270px;
   margin: 0 0 26px;
 
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   color: #444444;
 }
 
 .example__box {
   display: flex;
   flex-direction: column;
+
+  margin: 0;
 }
 
 .example__value {
   width: 124px;
-  padding: 18px 0 16px;
+  padding: 8px 0 16px;
 
   font-size: 24px;
   line-height: 35px;
@@ -52,7 +54,7 @@
   width: 92px;
   margin-top: -13px;
 
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   color: #444444;
@@ -81,16 +83,20 @@
 }
 
 .example__info {
-  margin: 23px auto 0;
+  margin: 19px auto 0;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.example__slider {
+  margin-top: 35px;
 }
 
 @media (min-width: @tablet-width) {
   .example {
     padding-top: 47px;
     padding-bottom: 0;
-    background: linear-gradient(to bottom, #ffffff 69%, #f2f2f2 69%);
+    background: linear-gradient(to bottom, #ffffff 57%, #f2f2f2 57%);
   }
 
   .example__text-wrap {
@@ -104,13 +110,12 @@
 
   .example__text {
     width: 702px;
-    margin-bottom: 60px;
+    margin-bottom: 53px;
   }
 
   .example__info {
     width: 192px;
-    margin: 0;
-    margin-left: auto;
+    margin-top: 7px;
 
     font-size: 20px;
     line-height: 28px;
@@ -118,24 +123,37 @@
   }
 
   .example__box {
-    margin: -6px 43px 0 0;
+    margin: 0 41px 0 0;
   }
 
   .example__value {
-    width: 162px;
+    width: 159px;
+    padding-top: 13px;
+
     font-size: 30px;
     line-height: 37px;
   }
 
   .example__field {
     width: 162px;
+    margin-top: -3px;
+
     font-size: 14px;
     line-height: 14px;
+
+    &::before {
+      width: 7px;
+      margin-right: 6px;
+    }
+
+    &::after {
+      width: 7px;
+      margin-left: 6px;
+    }
   }
 
   .example__slider {
-    height: 544px; //временно, чтобы pixelperfect подогнать
-    margin: 173px auto 0;
+    margin: 79px auto 0;
     // background: linear-gradient(to right,#f2f2f2 50%, #eaeaea 50%) ;
   }
 }
@@ -158,21 +176,26 @@
   }
 
   .example__text-wrap {
-    width: 570px;
-    margin: 0 40px 0 auto;
-    padding: 75px 40px 65px 0;
+    width: 480px;
+    margin: 0 90px 0 0;
+    padding: 75px 40px 42px 0;
     background-color: #f2f2f2;
     box-sizing: border-box;
   }
 
   .example__text {
     width: 439px;
-    margin-bottom: 33px;
+    margin-bottom: 31px;
+  }
+
+  .example__box {
+    margin-top: 6px;
+    margin-bottom: 9px;
   }
 
   .example__info {
     width: 325px;
-    margin-top: -22px;
+    margin-top: 10px;
     margin-left: 0;
 
     text-align: left;
@@ -180,7 +203,6 @@
 
   .example__slider {
     width: 610px;
-    height: 467px; //временно
     margin: 0 auto 0 0;
   }
 }

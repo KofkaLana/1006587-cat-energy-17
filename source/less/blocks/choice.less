@@ -1,5 +1,8 @@
 .choice {
-  margin: 30px 0 35px;
+  margin-bottom: 31px;
+  padding-top: 14px;
+
+  overflow: hidden;
 }
 
 .choice__wrap {
@@ -8,26 +11,46 @@
 
 .choice__title {
   .title;
+  margin: 0 0 24px;
 }
 
 .choice__text {
-  font-size: 16px;
+  width: 245px;
+  margin: 0 0 31px;
+  font-size: 14px;
   text-transform: uppercase;
 }
 
 @media (min-width: @tablet-width) {
   .choice {
-    margin: 70px 0;
+    padding-top: 34px;
+    padding-bottom: 42px;
+  }
+
+  .choice__title {
+    margin-bottom: 54px;
+    margin-left: -2px;
+    font-size: @tablet-font-size;
   }
 
   .choice__text {
+    width: 340px;
     margin-left: 40px;
+    margin-bottom: 57px;
+
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .choice {
-    margin: 85px 0 80px;
+    padding-top: 53px;
+    margin-bottom: 41px;
+  }
+
+  .choice__title {
+    margin-left: 0;
   }
 
   .choice__text {
