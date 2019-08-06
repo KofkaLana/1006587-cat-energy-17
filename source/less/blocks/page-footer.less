@@ -1,5 +1,5 @@
 .page-footer {
-  background-color: #f2f2f2;
+  background-color: @grey-bg;
 }
 
 .page-footer__wrap {
@@ -14,14 +14,14 @@
 
 .page-footer__logo {
   padding-bottom: 30px;
-  cursor: pointer;
 
-  &:hover,
-  &:focus {
+  &[href]:hover,
+  &[href]:focus {
+    cursor: pointer;
     opacity: 0.8;
   }
 
-  &:active {
+  &[href]:active {
     opacity: 0.6;
   }
 }
@@ -29,8 +29,8 @@
 .page-footer__social {
   width: 280px;
   padding: 21px 0 18px;
-  border-top: 1px solid rgba(68, 68, 68, 0.1);
-  border-bottom: 1px solid rgba(68, 68, 68, 0.1);
+  border-top: 1px solid @grey-line;
+  border-bottom: 1px solid @grey-line;
 }
 
 .page-footer__copyright {
