@@ -72,17 +72,20 @@
     </section>
 
     <section class="advantages">
-      <h2 class="advantages__title">Как это работает</h2>
-      <ul class="advantages__list">
-        <li class="advantages__item advantages__item--eco">Функциональное питание содержит только полезные питательные
-          вещества.</li>
-        <li class="advantages__item advantages__item--powder">Выпускается в виде порошка, который нужно лишь залить
-          кипятком и готово.</li>
-        <li class="advantages__item advantages__item--food">Замените один-два приема обычной еды на наше функциональное
-          питание.</li>
-        <li class="advantages__item advantages__item--time">Уже через месяц наслаждайтесь изменениями к лучшему
-          вашего&nbsp;питомца!</li>
-      </ul>
+      <div class="advantages__wrap">
+        <h2 class="advantages__title">Как это работает</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item--eco">Функциональное питание содержит только полезные питательные
+            вещества.</li>
+          <li class="advantages__item advantages__item--powder">Выпускается в виде порошка, который нужно лишь залить
+            кипятком и готово.</li>
+          <li class="advantages__item advantages__item--food">Замените один-два приема обычной еды на наше
+            функциональное
+            питание.</li>
+          <li class="advantages__item advantages__item--time">Уже через месяц наслаждайтесь изменениями к лучшему
+            вашего&nbsp;питомца!</li>
+        </ul>
+      </div>
     </section>
 
     <section class="example">
@@ -116,8 +119,7 @@
               </li>
               <li class="slider__item slide">
                 <picture>
-                  <source media="(min-width: 1300px)"
-                    srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                  <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
                   <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="251" height="240"
                     alt="Стало">
@@ -126,11 +128,15 @@
               </li>
             </ul>
             <div class="slider__toggles">
-              <button class="slider__toggle" type="button">Было</button>
+              <button class="slider__toggle toggle-before" type="button">
+                <span>Было</span>
+              </button>
               <div class="slider__scale">
                 <div class="slider__bar"></div>
               </div>
-              <button class="slider__toggle" type="button">Стало</button>
+              <button class="slider__toggle toggle-after" type="button">
+                <span>Стало</span>
+              </button>
             </div>
           </div>
         </div>
@@ -149,8 +155,9 @@
         </div>
       </div>
       <div class="contacts__map">
-        <!-- <img src="img/bg-map-mobile@1x.png" width="320px" height="360px" alt="ул. Большая Конюшенная, д. 19/8
-        Санкт-Петербург"> -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533248!2d30.32085871635935!3d59.93871648187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1565079004091!5m2!1sru!2sru"
+          width="320" height="360" frameborder="0" allowfullscreen></iframe>
       </div>
     </section>
 
@@ -167,7 +174,6 @@
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span
                 class="visually-hidden">Мы в Вконтакте</span>
               <?xml version="1.0" encoding="utf-8"?>
-              <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 12"
                 style="enable-background:new 0 0 22 12" xml:space="preserve">
@@ -179,9 +185,7 @@
           <li class="social__item">
             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span
                 class="visually-hidden">Мы в Инстаграме</span>
-              <?xml version="1.0" encoding="utf-8"?>
-              <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              <?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16.1 16"
                 style="enable-background:new 0 0 16.1 16" xml:space="preserve">
                 <style type="text/css">
@@ -200,9 +204,7 @@
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span
                 class="visually-hidden">Мы в Фейсбуке</span>
-              <?xml version="1.0" encoding="utf-8"?>
-              <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              <?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 19"
                 style="enable-background:new 0 0 10 19" xml:space="preserve">
                 <path fill="#6b6b6b"
@@ -226,6 +228,7 @@
 
   <script src="js/script.js"></script>
   <script src="js/picturefill.js"></script>
+
 </body>
 
 </html>

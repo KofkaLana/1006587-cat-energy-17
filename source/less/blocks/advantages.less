@@ -1,6 +1,9 @@
 .advantages {
-  .container;
   margin-bottom: 45px;
+}
+
+.advantages__wrap {
+  .container;
 }
 
 .advantages__title {
@@ -30,7 +33,7 @@
     width: 60px;
     height: 60px;
     content: "";
-    background-color: #68b738;
+    background-color: @green;
     background-position: center;
     background-repeat: no-repeat;
 
@@ -84,9 +87,12 @@
   .advantages {
     margin-top: 46px;
     margin-bottom: 0;
-    padding-left: 31px;
 
     border-bottom: 1px solid #e6e6e6;
+  }
+
+  .advantages__wrap {
+    padding-left: 31px;
   }
 
   .advantages__title {
@@ -129,7 +135,7 @@
       counter-increment: li;
       font-family: "Oswald", "Arial", sans-serif;
       font-size: 281px;
-      color: #f2f2f2;
+      color: @grey-bg;
       z-index: -1;
     }
   }
@@ -138,6 +144,10 @@
 @media (min-width: @desktop-width) {
   .advantages {
     margin-top: 45px;
+    border-bottom: none;
+  }
+
+  .advantages__wrap {
     padding-left: 40px;
     padding-right: 37px;
   }

@@ -24,7 +24,7 @@
   text-transform: uppercase;
 
   a {
-    color: #000000;
+    color: @black;
   }
 }
 
@@ -36,7 +36,7 @@
   font-size: 12px;
   line-height: 13px;
   font-weight: 400;
-  color: #444444;
+  color: @grey;
   border-spacing: 1px;
 
   th {
@@ -58,7 +58,7 @@
     width: 324px;
     padding: 0;
     padding-bottom: 40px;
-    background-color: #f2f2f2;
+    background-color: @grey-bg;
 
     &:nth-child(2n) {
       .product-card__link {
@@ -100,11 +100,11 @@
 
     th {
       padding: 5px 0;
-      border-bottom: 1px solid #cdcdcd;
+      border-bottom: 1px solid @border;
     }
 
     td {
-      border-bottom: 1px solid #cdcdcd;
+      border-bottom: 1px solid @border;
     }
   }
 

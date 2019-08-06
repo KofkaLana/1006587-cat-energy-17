@@ -4,16 +4,17 @@
   a {
     display: block;
     padding: 25px 0;
-    color: #000000;
+    color: @black;
   }
 
   &:last-child {
-    border-bottom: 1px solid #e6e6e6;
+    border-bottom: 1px solid @border-menu;
   }
 }
 
 .site-list a[href] {
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.6;
   }
 
@@ -54,7 +55,7 @@
 
         height: 2px;
 
-        background: #65a93c;
+        background: @green;
       }
     }
   }
@@ -63,22 +64,22 @@
 @media (min-width: @desktop-width) {
   .site-list__item {
     a {
-      color: #ffffff;
+      color: @white;
     }
 
     &--active {
       &::after {
-        background: #ffffff;
+        background: @white;
       }
     }
 
     &--inner {
       a {
-        color: #000000;
+        color: @black-light;
       }
 
       &::after {
-        background: #65a93c;
+        background: @green;
       }
     }
   }

@@ -1,6 +1,6 @@
 .form {
   font-size: 16px;
-  color: #222222;
+  color: @black-light;
   text-transform: uppercase;
 }
 
@@ -74,9 +74,37 @@
 
   font: inherit;
   text-transform: uppercase;
-  color: #444444;
+  color: @grey;
 
-  border: 1px solid #cdcdcd;
+  border: 1px solid @border;
+
+  &[type="number"] {
+    appearance: textfield;
+  }
+
+  &:hover {
+    border-color: @border-hover;
+    outline-color: @border-hover;
+  }
+
+  &:focus,
+  &:active {
+    padding: 12px;
+
+    border-width: 2px;
+    border-color: @grey;
+    outline: none;
+  }
+
+  &--mail,
+  &--tel {
+    &:focus + svg,
+    &:active + svg {
+      path {
+        fill: @green;
+      }
+    }
+  }
 }
 
 .form__block-list {
@@ -116,6 +144,11 @@
     textarea {
       width: 630px;
       padding: 11px 17px 10px;
+
+      &:focus,
+      &:active {
+        padding: 10px 16px 9px;
+      }
     }
   }
 
@@ -147,6 +180,11 @@
 
   .form__text-field {
     padding: 10px 20px;
+
+    &:focus,
+    &:active {
+      padding: 9px 19px;
+    }
   }
 
   .form__block-title {
@@ -211,6 +249,11 @@
     textarea {
       margin-bottom: 20px;
       padding: 15px 18px 18px;
+
+      &:focus,
+      &:active {
+        padding: 14px 17px 17px;
+      }
     }
   }
 
