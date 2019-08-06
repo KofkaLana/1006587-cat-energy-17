@@ -1,7 +1,7 @@
 .example {
   padding-top: 18px;
   padding-bottom: 35px;
-  background-color: #f2f2f2;
+  background-color: @grey-bg;
 }
 
 .example__wrap {
@@ -24,7 +24,7 @@
   margin: 0 0 26px;
 
   font-family: "Arial", sans-serif;
-  color: #444444;
+  color: @grey;
 }
 
 .example__box {
@@ -43,7 +43,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  border: 1px solid #cdcdcd;
+  border: 1px solid @border;
   border-radius: 2px;
   border-bottom: transparent;
 }
@@ -57,7 +57,7 @@
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
-  color: #444444;
+  color: @grey;
   text-align: center;
 
   &::before,
@@ -70,7 +70,7 @@
     width: 20px;
     height: 1px;
 
-    background: #cdcdcd;
+    background: @border;
   }
 
   &::before {
@@ -179,7 +179,7 @@
     width: 480px;
     margin: 0 90px 0 0;
     padding: 75px 40px 42px 0;
-    background-color: #f2f2f2;
+    background-color: @grey-bg;
     box-sizing: border-box;
   }
 
