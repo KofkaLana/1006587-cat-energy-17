@@ -30,6 +30,10 @@
   align-items: center;
   margin: 0 0 13px;
 
+  svg {
+    fill: @black-light;
+  }
+
   &--mail {
     position: relative;
 
@@ -100,9 +104,7 @@
   &--tel {
     &:focus + svg,
     &:active + svg {
-      path {
-        fill: @green;
-      }
+      fill: @green;
     }
   }
 }

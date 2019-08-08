@@ -17,6 +17,10 @@
 .social__link {
   color: @black;
 
+  svg {
+    fill: @grey-light;
+  }
+
   &--vkontakte {
     svg {
       width: 22px;
@@ -40,7 +44,7 @@
 
   &:hover,
   &:focus {
-    path {
+    svg {
       fill: @green;
     }
   }
