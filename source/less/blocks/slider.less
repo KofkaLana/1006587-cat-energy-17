@@ -24,6 +24,19 @@
 
   background: transparent;
   border: none;
+
+  &:hover,
+  &:focus {
+    span {
+      border-bottom: 1px solid rgba(34, 34, 34, 0.4);
+    }
+  }
+
+  &:active {
+    span {
+      border: none;
+    }
+  }
 }
 
 .slider__scale {
@@ -99,18 +112,7 @@
       border-bottom: 1px dotted rgba(34, 34, 34, 0.23);
     }
 
-    &:hover,
-    &:focus {
-      span {
-        border-bottom: 1px solid rgba(34, 34, 34, 0.4);
-      }
-    }
 
-    &:active {
-      span {
-        border: none;
-      }
-    }
   }
 }
 
