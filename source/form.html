@@ -6,6 +6,8 @@
   <title>Интернет-магазин фитнес еды для котиков «CAT Energy»</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
+
+  <script src="js/picturefill.min.js"></script>
 </head>
 
 <body>
@@ -46,11 +48,11 @@
         <form class="form" action="https://echo.htmlacademy.ru" method="POST">
           <div class="form__wrap">
             <div class="form__block">
-              <p class="form__field-row">
+              <p class="form__field-row form__field-row--required">
                 <label class="form__field-label" for="name">Имя:<sup>*</sup></label>
                 <input class="form__text-field" type="text" name="name" id="name" placeholder="Барсик" required="">
               </p>
-              <p class="form__field-row">
+              <p class="form__field-row form__field-row--required">
                 <label class="form__field-label" for="weight">Вес (кг):<sup>*</sup></label>
                 <input class="form__text-field" type="number" name="weight" id="weight" placeholder="7" required="">
               </p>
@@ -76,14 +78,14 @@
           </div>
           <div class="form__block">
             <p class="form__block-title">Контактные данные <br>(владельца кота)</p>
-            <p class="form__field-row form__field-row--mail">
+            <p class="form__field-row form__field-row--mail form__field-row--required">
               <label class="form__field-label" for="email">E-mail:<sup>*</sup></label>
               <input class="form__text-field form__text-field--mail" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required="">
               <svg width="17" height="13">
                 <use xlink:href="#icon-mail"></use>
               </svg>
             </p>
-            <p class="form__field-row form__field-row--tel">
+            <p class="form__field-row form__field-row--tel form__field-row--required">
               <label class="form__field-label" for="phone">Телефон:<sup>*</sup></label>
               <input class="form__text-field form__text-field--tel" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" pattern="[8]{1}[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" required="">
               <svg width="20" height="20">
@@ -184,8 +186,7 @@
     </div>
   </footer>
 
-  <script src="js/script.js"></script>
-  <script src="js/picturefill.js"></script>
+  <script src="js/script.min.js"></script>
 
 </body>
 
