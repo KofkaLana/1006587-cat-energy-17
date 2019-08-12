@@ -10,6 +10,7 @@
 
   textarea {
     width: 100%;
+    padding-right: 13px;
     box-sizing: border-box;
   }
 }
@@ -30,16 +31,21 @@
   align-items: center;
   margin: 0 0 13px;
 
+  &--mail,
+  &--tel {
+    position: relative;
+  }
+
   svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
     fill: @black-light;
   }
 
   &--mail {
-    position: relative;
-
     svg {
-      position: absolute;
-      top: 16px;
       right: 16px;
 
       width: 17px;
@@ -48,15 +54,21 @@
   }
 
   &--tel {
-    position: relative;
-
     svg {
-      position: absolute;
-      top: 14px;
       right: 13px;
 
       width: 20px;
       height: 20px;
+    }
+  }
+
+  &--error {
+    .form__text-field {
+      border: 2px solid @error;
+    }
+
+    svg {
+      fill: @error;
     }
   }
 }
@@ -75,12 +87,15 @@
 .form__text-field {
   flex-grow: 1;
   padding: 13px;
+  padding-right: 35px;
 
   font: inherit;
   text-transform: uppercase;
   color: @grey;
 
   border: 1px solid @border;
+
+  box-sizing: border-box;
 
   &[type="number"] {
     appearance: textfield;
@@ -94,6 +109,7 @@
   &:focus,
   &:active {
     padding: 12px;
+    padding-right: 34px;
 
     border-width: 2px;
     border-color: @grey;
@@ -159,14 +175,12 @@
 
     &--mail {
       svg {
-        top: 20px;
         right: 18px;
       }
     }
 
     &--tel {
       svg {
-        top: 17px;
         right: 15px;
       }
     }
@@ -180,12 +194,15 @@
     width: 100%;
   }
 
-  .form__text-field {
+  input.form__text-field {
+    height: 52px;
     padding: 10px 20px;
+    padding-right: 40px;
 
     &:focus,
     &:active {
       padding: 9px 19px;
+      padding-right: 40px;
     }
   }
 
