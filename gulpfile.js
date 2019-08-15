@@ -28,6 +28,7 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
@@ -73,7 +74,7 @@ gulp.task("copy", function(){
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**/*",
     "!source/img/icons/**",
-    "source/js/picturefill.min.js",
+    "source/js/*.js",
     "source/*.ico"
   ], {
     base: "source"
@@ -105,7 +106,7 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/less/**/*.less", gulp.series("css"));
+  gulp.watch("source/less/**/*.less", gulp.series("css", "refresh"));
   gulp.watch("source/img/icons/*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/js/**/*.js", gulp.series("compress", "refresh"))
   gulp.watch("source/*.html", gulp.series("html", "refresh"));

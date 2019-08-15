@@ -1,11 +1,11 @@
 .categories {
   .container;
-  margin-top: 20px;
+  margin-top: 21px;
   margin-bottom: -2px;
 }
 
 .categories__program {
-  margin: 0 0 17px;
+  margin: 0 0 18px;
   padding: 32px 20px 23px;
   background-color: @grey-bg;
   box-sizing: border-box;
@@ -63,17 +63,16 @@
 .categories__info {
   font-family: "Arial", sans-serif;
   margin: 0;
-  padding-bottom: 24px;
+  padding-bottom: 23px;
 
   border-bottom: 1px solid @grey-line;
 }
 
 .categories__link {
-  position: relative;
-  display: block;
+  display: flex;
 
-  width: 97px;
-  padding-top: 19px;
+  width: 135px;
+  padding-top: 20px;
 
   font-size: 16px;
   line-height: 16px;
@@ -82,12 +81,13 @@
   text-transform: uppercase;
 
   &::after {
-    position: absolute;
-    top: 17px;
-    left: 97px;
     width: 24px;
     height: 11px;
+    margin-left: 12px;
     content: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
   }
 
   &:hover,
@@ -113,7 +113,7 @@
   }
 
   .categories__program {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     padding: 76px 51px 63px;
   }
 
@@ -157,7 +157,7 @@
   }
 
   .categories__link {
-    width: 125px;
+    width: 175px;
     padding-top: 0;
 
     font-size: 20px;
@@ -165,8 +165,8 @@
     border: none;
 
     &::after {
-      top: -3px;
-      left: 125px;
+      margin-top: -4px;
+      margin-left: 23px;
     }
   }
 }

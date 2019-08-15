@@ -1,11 +1,10 @@
 .checkbox-list {
-  margin: -21px 0 0;
-  padding-top: 28px;
+  padding-top: 27px;
 }
 
 .checkbox-list__option {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   padding-left: 46px;
 
   box-sizing: border-box;
@@ -52,23 +51,27 @@
   .checkbox-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 
-    margin-bottom: -45px;
-    padding-top: 11px;
+    margin-bottom: -42px;
+    padding-top: 12px;
   }
 
   .checkbox-list__option {
     width: 286px;
-    margin-bottom: 53px;
-    padding-left: 57px;
+    margin-right: 57px;
+    margin-bottom: 52px;
+    padding-left: 58px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
   }
 
   .checkbox-list__input + label::before {
     width: 37px;
     height: 37px;
 
-    top: -8px;
+    top: -9px;
     left: 0;
   }
 
@@ -80,14 +83,18 @@
 
 @media (min-width: @desktop-width) {
   .checkbox-list {
-    margin-bottom: 20px;
-    padding-top: 10px;
+    margin-bottom: 11px;
+    padding-top: 11px;
   }
 
   .checkbox-list__option {
     width: 245px;
     margin-right: 80px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+
+    &:nth-child(2n) {
+      margin-right: 80px;
+    }
 
     &:nth-child(4n) {
       margin-right: 0;
