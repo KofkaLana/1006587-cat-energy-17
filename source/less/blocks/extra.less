@@ -1,5 +1,5 @@
 .extra {
-  margin: 29px 0 37px;
+  margin: 29px 0 35px;
 
   overflow: hidden;
 }
@@ -24,17 +24,21 @@
 }
 
 .extra__item {
-  padding: 13px 0 17px;
+  padding: 12px 0 18px;
   border-bottom: 1px solid @border;
 
   &:first-child {
     border-top: 1px solid @border;
   }
+
+  &:nth-child(3n) {
+    padding-top: 13px;
+  }
 }
 
 .extra__gift {
   position: relative;
-  margin-top: 40px;
+  margin-top: 38px;
   background: @green url("../img/gift-photo-mobile@1x.jpg") no-repeat;
   background-size: 280px auto;
 
@@ -44,7 +48,7 @@
 
   svg {
     position: absolute;
-    top: 65px;
+    top: 66px;
     left: 113px;
 
     width: 55px;
@@ -57,7 +61,7 @@
   position: relative;
   width: 162px;
   margin: 0 auto;
-  padding: 186px 0 42px;
+  padding: 188px 0 42px;
 
   font-family: "Arial", sans-serif;
   font-size: 16px;
@@ -68,12 +72,12 @@
 
 @media (min-width: @tablet-width) {
   .extra {
-    margin-top: 27px;
+    margin-top: 28px;
     margin-bottom: 79px;
   }
 
   .extra__title {
-    margin: 0 0 80px;
+    margin: 0 -2px 80px;
 
     &::before {
       height: 3px;
@@ -90,10 +94,15 @@
   .extra__item {
     border: 1px solid #cdcdcd;
     border-top: none;
+
+    &:nth-child(3n) {
+      padding-top: 25px;
+    }
   }
 
   .extra__gift {
     margin-top: 70px;
+    margin-left: -1px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     background-size: 708px auto;
 
@@ -102,8 +111,8 @@
     }
 
     svg {
-      top: 64px;
-      left: 90px;
+      top: 65px;
+      left: 91px;
     }
   }
 
@@ -117,8 +126,8 @@
 
 @media (min-width: @desktop-width) {
   .extra {
-    margin-top: 34px;
-    margin-bottom: 87px;
+    margin-top: 33px;
+    margin-bottom: 85px;
   }
 
   .extra__wrap {
@@ -139,6 +148,10 @@
   .extra__item {
     border-right: none;
     border-left: none;
+
+    &:nth-child(3n) {
+      padding-top: 20px;
+    }
   }
 
   .extra__gift {

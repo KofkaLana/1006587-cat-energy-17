@@ -1,6 +1,6 @@
 .radio-list {
   width: 320px;
-  margin: -19px -20px 12px;
+  margin: -19px -20px 11px;
   padding-left: 20px;
   padding-right: 20px;
 
@@ -16,7 +16,7 @@
 
 .radio-list__input + label::before {
   position: absolute;
-  top: -10px;
+  top: -8px;
   left: -2px;
   content: "";
   width: 29px;
@@ -27,7 +27,7 @@
 
 .radio-list__input:checked + label::after {
   position: absolute;
-  top: -1px;
+  top: 2px;
   left: 8px;
   content: "";
   width: 0;
@@ -85,5 +85,9 @@
 
   .radio-list__input + label::before {
     top: -8px;
+  }
+
+  .radio-list__input:checked + label::after {
+    top: 3px;
   }
 }

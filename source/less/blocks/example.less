@@ -1,5 +1,5 @@
 .example {
-  padding-top: 19px;
+  padding-top: 16px;
   padding-bottom: 35px;
   background-color: @grey-bg;
 }
@@ -46,7 +46,6 @@
   text-align: center;
   text-transform: uppercase;
 
-
   border-bottom: transparent;
 }
 
@@ -65,17 +64,18 @@
 }
 
 .example__info {
-  margin: 32px auto 0;
+  margin: 34px auto 0;
   line-height: 20px;
   text-transform: uppercase;
 }
 
 .example__slider {
-  margin: 35px -20px 0;
+  margin: 33px -20px 0;
 }
 
 @media (min-width: @tablet-width) {
   .example {
+    overflow: hidden;
     padding-top: 45px;
     padding-bottom: 0;
     background: linear-gradient(to bottom, #ffffff 57%, #f2f2f2 57%);
@@ -92,7 +92,7 @@
 
   .example__text {
     width: 702px;
-    margin-bottom: 53px;
+    margin-bottom: 55px;
   }
 
   .example__info {
@@ -106,7 +106,7 @@
   }
 
   .example__box {
-    margin: 0 42px 0 0;
+    margin: 0 44px 0 0;
   }
 
   .example__value {
@@ -147,9 +147,9 @@
 
 @media (min-width: @desktop-width) {
   .example {
-    margin-top: 32px;
-    padding-top: 0;
-    background: linear-gradient(to bottom, #ffffff 22%, #f2f2f2 22%);
+    margin-top: -29px;
+    padding-top: 60px;
+    background: linear-gradient(to bottom, #ffffff 29%, #f2f2f2 29%);
   }
 
   .example__wrap {
@@ -172,21 +172,24 @@
 
   .example__text {
     width: 439px;
-    margin-bottom: 34px;
+    margin-bottom: 33px;
   }
 
   .example__box {
-    margin-top: 34px;
+    margin-top: 36px;
     margin-bottom: 27px;
   }
 
   .example__field {
+    max-width: 129px;
     background-color: @grey-bg;
+
+    align-self: flex-end; // Для IE11
   }
 
   .example__info {
     width: 327px;
-    margin-top: 28px;
+    margin-top: 29px;
     margin-bottom: 60px;
     margin-left: 0;
     display: flex;
