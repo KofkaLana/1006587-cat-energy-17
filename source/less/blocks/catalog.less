@@ -23,6 +23,10 @@
   &:first-child {
     border-top: 1px solid @border-catalog;
   }
+
+  &:nth-child(3n) {
+    padding-top: 9px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -33,7 +37,7 @@
 
   .catalog__title {
     font-size: @tablet-font-size;
-    margin: 0 0 165px;
+    margin: 0 0 164px;
   }
 
   .catalog__list {
@@ -44,12 +48,16 @@
   .catalog__item {
     width: 324px;
     margin-right: 60px;
-    margin-bottom: 139px;
+    margin-bottom: 138px;
 
     border: none;
 
     &:nth-child(2n) {
       margin-right: -2px;
+    }
+
+    &:nth-child(3n) {
+      padding-top: 0;
     }
   }
 }
@@ -67,7 +75,7 @@
   .catalog__item {
     width: 245px;
     margin-right: 80px;
-    margin-bottom: 140px;
+    margin-bottom: 141px;
 
     &:nth-child(2n) {
       margin-right: 80px;

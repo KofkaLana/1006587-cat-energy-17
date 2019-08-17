@@ -1,5 +1,5 @@
 .example {
-  padding-top: 18px;
+  padding-top: 16px;
   padding-bottom: 35px;
   background-color: @grey-bg;
 }
@@ -21,7 +21,7 @@
 
 .example__text {
   width: 270px;
-  margin: 0 0 26px;
+  margin: 0 0 27px;
 
   font-family: "Arial", sans-serif;
   color: @grey;
@@ -32,69 +32,51 @@
   flex-direction: column;
 
   margin: 0;
+
+  border: 1px solid @border;
+  border-radius: 2px;
 }
 
 .example__value {
-  width: 124px;
-  padding: 8px 0 16px;
+  width: 122px;
+  padding: 8px 0 0;
 
   font-size: 24px;
   line-height: 35px;
   text-align: center;
   text-transform: uppercase;
 
-  border: 1px solid @border;
-  border-radius: 2px;
   border-bottom: transparent;
 }
 
 .example__field {
-  display: flex;
-  align-items: center;
-  width: 92px;
-  margin-top: -13px;
+  max-width: 70px;
+  margin: -12px auto 0;
+  padding: 0 8px;
 
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   color: @grey;
   text-align: center;
-
-  &::before,
-  &::after {
-    content: "";
-
-    flex-grow: 1;
-    flex-shrink: 0;
-
-    width: 20px;
-    height: 1px;
-
-    background: @border;
-  }
-
-  &::before {
-    margin-right: 15px;
-  }
-
-  &::after {
-    margin-left: 15px;
-  }
+  background-color: @grey-bg;
+  transform: translateY(100%) translateY(-10px);
 }
 
 .example__info {
-  margin: 19px auto 0;
+  margin: 34px auto 0;
   line-height: 20px;
   text-transform: uppercase;
 }
 
 .example__slider {
-  margin-top: 35px;
+  margin: 33px -20px 0;
 }
 
 @media (min-width: @tablet-width) {
   .example {
-    padding-top: 47px;
+    overflow: hidden;
+    padding-top: 45px;
     padding-bottom: 0;
     background: linear-gradient(to bottom, #ffffff 57%, #f2f2f2 57%);
   }
@@ -110,7 +92,7 @@
 
   .example__text {
     width: 702px;
-    margin-bottom: 53px;
+    margin-bottom: 55px;
   }
 
   .example__info {
@@ -124,46 +106,50 @@
   }
 
   .example__box {
-    margin: 0 41px 0 0;
+    margin: 0 44px 0 0;
   }
 
   .example__value {
     width: 159px;
-    padding-top: 13px;
+    padding: 13px 0 14px;
 
     font-size: 30px;
     line-height: 37px;
   }
 
   .example__field {
-    width: 162px;
-    margin-top: -7px;
+    max-width: 150px;
+    margin-top: -8px;
 
     font-size: 14px;
     line-height: 14px;
-
-    &::before {
-      width: 7px;
-      margin-right: 6px;
-    }
-
-    &::after {
-      width: 7px;
-      margin-left: 6px;
-    }
+    background-color: @white;
+    transform: translateY(100%) translateY(-7px);
   }
 
   .example__slider {
-    margin: 82px auto 0;
-    // background: linear-gradient(to right,#f2f2f2 50%, #eaeaea 50%) ;
+    position: relative;
+    margin: 85px 0 0;
+    padding-bottom: 75px;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 100%;
+      height: 74%;
+
+      content: "";
+      background-color: @grey-bg-darker;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .example {
-    margin-top: 32px;
-    padding-top: 0;
-    background: linear-gradient(to bottom, #ffffff 22%, #f2f2f2 22%);
+    margin-top: -29px;
+    padding-top: 60px;
+    background: linear-gradient(to bottom, #ffffff 29%, #f2f2f2 29%);
   }
 
   .example__wrap {
@@ -179,24 +165,32 @@
   .example__text-wrap {
     width: 480px;
     margin: 0 90px 0 0;
-    padding: 75px 40px 42px 0;
+    padding: 75px 40px 10px 0;
     background-color: @grey-bg;
     box-sizing: border-box;
   }
 
   .example__text {
     width: 439px;
-    margin-bottom: 31px;
+    margin-bottom: 33px;
   }
 
   .example__box {
-    margin-top: 6px;
-    margin-bottom: 9px;
+    margin-top: 36px;
+    margin-bottom: 27px;
+  }
+
+  .example__field {
+    max-width: 129px;
+    background-color: @grey-bg;
+
+    align-self: flex-end; // Для IE11
   }
 
   .example__info {
     width: 327px;
-    margin-top: 10px;
+    margin-top: 29px;
+    margin-bottom: 60px;
     margin-left: 0;
     display: flex;
     justify-content: space-between;
@@ -207,5 +201,12 @@
   .example__slider {
     width: 610px;
     margin: 0 auto 0 0;
+    padding-bottom: 0;
+
+    &::after {
+      width: 100vw;
+      height: 100%;
+      margin-left: 58px;
+    }
   }
 }
